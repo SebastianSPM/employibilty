@@ -1,6 +1,7 @@
 // O puedes ponerlo dentro de src/app/(dashboard)/hooks/useDashboardData.ts
 import { useState, useEffect, useMemo } from 'react';
-import { getCharacters, Character } from '@/services/api';
+import { getCharacters } from '@/services/api';
+import { Character } from '@/types/character';
 
 export function useDashboardData() {
   const [characters, setCharacters] = useState<Character[]>([]);

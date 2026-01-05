@@ -1,10 +1,4 @@
-export interface Character {
-  id: number;
-  name: string;
-  status: 'Alive' | 'Dead' | 'unknown';
-  species: string;
-  image: string;
-}
+import { Character } from "@/types/character";
 
 export interface ApiResponse {
   results: Character[];

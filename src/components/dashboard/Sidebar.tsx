@@ -1,3 +1,5 @@
+"use client"
+import Link from "next/link";
 import React from "react";
 
 interface SidebarItem {
@@ -64,7 +66,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
             }
           >
             {item.icon && <span>{item.icon}</span>}
-            <span>{item.label}</span>
+            <Link href='/home'>
+              <button>
+                {item.label}
+              </button>
+            </Link>
           </div>
         ))}
       </nav>

@@ -46,12 +46,12 @@ const CardDescription = styled.p`
   line-height: 1.4;
 `;
 
-export const Card: React.FC<CardProps> = ({
+export const Card = ({
   title,
   description,
   imageUrl,
   onClick,
-}) => {
+}:CardProps ) => {
   return (
     <CardContainer onClick={onClick}>
       {imageUrl && <CardImage src={imageUrl} alt={title} />}

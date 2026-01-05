@@ -1,4 +1,5 @@
-import { Character } from '@/services/api';
+import { Character } from "@/types/character";
+
 
 export default function CharacterCard({ character }: { character: Character }) {
   const statusColor = {
